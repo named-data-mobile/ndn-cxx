@@ -24,6 +24,7 @@
 #include <boost/functional/hash.hpp>
 
 #include <stdio.h>
+#include <cstdio>
 #include <ostream>
 
 namespace ndn {

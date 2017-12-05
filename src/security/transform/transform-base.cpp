@@ -26,7 +26,7 @@ namespace security {
 namespace transform {
 
 Error::Error(size_t index, const std::string& what)
-  : std::runtime_error("Error in module " + std::to_string(index) + ": " + what)
+  : std::runtime_error("Error in module " + to_string(index) + ": " + what)
   , m_index(index)
 {
 }
