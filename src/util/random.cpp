@@ -48,7 +48,7 @@ generateSecureBytes(uint8_t* bytes, size_t size)
 {
   if (RAND_bytes(bytes, size) != 1) {
     BOOST_THROW_EXCEPTION(std::runtime_error("Failed to generate random bytes (error code " +
-                                             std::to_string(ERR_get_error()) + ")"));
+                                             to_string(ERR_get_error()) + ")"));
   }
 }
 
